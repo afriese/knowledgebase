@@ -1,0 +1,44 @@
+html
+  head
+    title=title
+    
+    include ../../../assets/jade/assets.jade
+    
+    script(src="/knowledgebase/client_js/article.js")
+  body(style="margin-top: 70px; margin-bottom: 50px")
+    .container 
+      include ../../../general/navigation/jade/nav.jade
+      .row
+        .col-md-8 
+          ul.breadcrumb
+            li
+              a test
+            li
+              a hthej
+          .page-header
+            h1=title
+          div!=content
+        .col-md-4       
+          .btn.btn-primary(id="newMessage") jajsd
+          .well
+            h4 Alerts
+            #message
+          .well  
+             .btn-group.btn-group-justified
+               .btn-group
+                 span.button-checkbox
+                   button.btn(type='button', data-color='info').btn-sm Infos
+                   input.hidden(type='checkbox', checked='checked')
+               .btn-group
+                 span.button-checkbox
+                   button.btn(type='button', data-color='success').btn-sm Success
+                   input.hidden(type='checkbox', checked='checked')
+               .btn-group
+                 span.button-checkbox
+                   button.btn(type='button', data-color='warning').btn-sm Warnings
+                   input.hidden(type='checkbox', checked='checked')
+               .btn-group
+                 span.button-checkbox
+                   button.btn(type='button', data-color='danger').btn-sm Errors
+                   input.hidden(type='checkbox', checked='checked') 
+          

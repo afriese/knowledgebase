@@ -1,0 +1,55 @@
+{
+	"module": "rezepte",
+	"brandname": "Rezepte",
+	"entries": [
+		{
+			"type": "link",
+			"title": "Speisekarte",
+			"link": "jkasd"
+		}, {
+			"type": "menu",
+			"title": "Kathegorien",
+			"subs": [
+				{
+					"type": "link",
+					"title": "Rind",
+					"link": "/rezepte/"
+				}, {
+					"type": "link",
+					"title": "Schwein",
+					"link": "/kb/addarticle"
+				}, {
+					"type": "link",
+					"title": "Geflügel",
+					"link": "/kb/addarticle"
+				}, {
+					"type": "link",
+					"title": "Fisch",
+					"link": "/kb/addarticle"
+				}
+			]
+		}, {
+			"type": "menu",
+			"title": "Aktionen",
+			"subs": [
+				{
+					"type": "link",
+					"title": "Rezepte anzeigen",
+					"link": "/rezepte/"
+				}, {
+					"type": "link",
+					"title": "Rezept hinzufügen",
+					"link": "/kb/addarticle"
+				}, {
+					"type": "link",
+					"title": "Rezept löschen",
+					"link": "/kb/addarticle"
+				}, {
+					"type": "link",
+					"title": "Rezept ändern",
+					"link": "/kb/addarticle"
+				}
+			]
+		}
+	]
+}

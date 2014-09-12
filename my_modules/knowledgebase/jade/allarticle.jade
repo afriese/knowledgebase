@@ -1,0 +1,25 @@
+html
+  head
+    title List of all articles
+    
+    include ../../../assets/jade/assets.jade
+  body(style="margin-top: 70px; margin-bottom: 50px")
+    
+    .container
+      include ../../../general/navigation/jade/nav.jade 
+      .row
+        .col-md-8
+          .page-header
+            h1 Alle Artikel
+          a(href="/kb/addarticle") Artikel hinzufügen  
+            
+          table.table
+            each entry in list
+              tr
+                td=entry.title
+                td(width="50px")
+                  a(href="/kb/showarticle:#{entry.title}") show
+                td(width="50px")
+                  a(href="/kb/editarticle:#{entry.title}") edit
+                td(width="50px")
+                  a(href="/kb/delarticle:#{entry.title}") delete

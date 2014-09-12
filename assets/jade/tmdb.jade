@@ -1,0 +1,11 @@
+include ../jade/assets.jade
+
+link(rel="stylesheet",type="text/css",href="/assets/css/eventlist.css")
+script(src="/assets/client_js/tmdb.js")
+
+.container
+  .row(data-bind="foreach: movies")
+    .col-md-2
+      a(href="#").thumbnail
+        img(data-bind="attr: { src: poster_path }", alt='...').img-responsive
+         

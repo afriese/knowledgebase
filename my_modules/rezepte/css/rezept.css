@@ -1,0 +1,26 @@
+.zubereitung {
+	counter-reset: my-badass-counter;
+}
+.zubereitung dd {
+	position: relative;
+	font: plain 16px Georgia;
+	padding: 4px 0 10px 0;
+}
+.zubereitung dd:before {
+	content: counter(my-badass-counter);
+	counter-increment: my-badass-counter;
+	position: absolute;
+	left: 0;
+	top: 0;
+	font: bold 30px/1 Sans-Serif;
+}
+.zubereitung dd {
+	margin: 0 0 30px 10px;
+}
+.zubereitung dt, .zubereitung dd {
+	padding-left: 50px;
+}
+
+.hr-active{
+	border:solid #00ffff 3px
+}

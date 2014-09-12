@@ -1,0 +1,37 @@
+head
+  include ../../assets/jade/assets.jade
+
+  link(rel="stylesheet",type="text/css",href="/assets/css/userinfo.css")
+body
+  .container
+    ul.nav.navbar-nav
+      li.profile-dropdown
+        a.dropdown-toggle(href='#', data-toggle='dropdown')
+          | Iasmani Pinazo
+          span.glyphicon.glyphicon-user.pull-right
+        ul.dropdown-menu
+          li
+            a(href='#')
+              | Account Settings
+              span.glyphicon.glyphicon-cog.pull-right
+          li.divider
+          li
+            a(href='#')
+              | User stats
+              span.glyphicon.glyphicon-stats.pull-right
+          li.divider
+          li
+            a(href='#')
+              | Messages
+              span.badge.pull-right  42 
+          li.divider
+          li
+            a(href='#')
+              | Favourites Snippets
+              span.glyphicon.glyphicon-heart.pull-right
+          li.divider
+          li
+            a(href='#')
+              | Sign Out
+              span.glyphicon.glyphicon-log-out.pull-right
+

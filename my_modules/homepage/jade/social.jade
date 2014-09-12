@@ -1,0 +1,74 @@
+html(style="background-image:url(#{page.background})")
+  head
+    title Homepage
+    link(rel="stylesheet",type="text/css",href="socialbuttons/social-buttons.css")
+    link(rel="stylesheet",type="text/css",href="bootstrap/css/bootstrap.min.css")
+    link(href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css", rel="stylesheet")
+    link(href="/css/social.css",rel="stylesheet",type="text/css")
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js')
+    script(src="js/index.js")
+    
+  body
+    .container
+      .row
+        .col-lg-6.col-lg-offset-3.panel.panel-default
+          .panel-body
+            .row
+              .col-lg-4
+                 img(src="img/profilbild.jpg",width="100%")
+              .col-lg-8
+                 .page-header
+                    h1=page.name
+                    &nbsp;
+                    small=page.title
+                 -each val in page.skills
+                   span.label.label-primary=val
+                   &nbsp;
+        .col-lg-6.col-lg-offset-3.panel.panel-default
+           .panel-body
+             .row
+               .btn-group.btn-group-justified
+                 .btn-group
+                    a.btn.btn-linkedin(href=page.linkedin)
+                      i.fa.fa-linkedin
+                      |  | Linkedin   
+                 .btn-group
+                    a.btn.btn-facebook(href=page.facebook)
+                      i.fa.fa-facebook
+                      |  | Facebook     
+                 .btn-group
+                    a.btn.btn-xing(href=page.xing)
+                      i.fa.fa-xing
+                      |  | Xing
+                 .btn-group
+                    a.btn.btn-skype(href=page.skype)
+                      i.fa.fa-skype
+                      |  | Skype
+        .col-lg-6.col-lg-offset-3.panel.panel-default
+           .panel-body
+             .row
+               center 
+                .col-md-4
+                  h5 Informationen
+                  -each val in page.informationen
+                    a(href=val.link)=val.title
+                    br
+                  br
+                  a.text-left mehr  
+                .col-md-4
+                  h5 aktive dienste
+                  -each val in page.dienste
+                    a(href=val.link)=val.title
+                    br
+                  br
+                  a.text-left mehr  
+                .col-md-4
+                  h5 Projekte
+                  -each val in page.projekte
+                    a(href=val.link)=val.title
+                    br 
+                  br
+                  a.text-left mehr      
+                      
+                     
+            

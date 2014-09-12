@@ -1,0 +1,7 @@
+{
+	"command":{
+		"module":"knowledgebase";
+		"command":"addArticle";
+		"action":"/kb/addarticle"
+	}
+}

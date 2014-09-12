@@ -1,0 +1,31 @@
+html {
+	overflow-y:scroll;
+}
+.fixed {
+	height:100%;
+	overflow:hidden;//
+	background:orange;
+}
+.scrollit {
+	height:100%;
+	overflow-y:scroll;//
+	background:lightgray;
+}
+#infobox {
+	position:absolute;
+	right:9px;
+	top:59px;
+}  
+#infobox2 {
+	position:absolute;
+	right:9px;
+	top:119px;
+}  
+
+.full-width {
+	width:100%;
+}
+
+.full-height {
+	height:100%;
+}

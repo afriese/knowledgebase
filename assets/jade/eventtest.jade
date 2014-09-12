@@ -1,0 +1,21 @@
+include ../assets/jade/assets.jade
+
+link(rel="stylesheet",type="text/css",href="/assets/css/eventlist.css")
+
+.container
+    include ../../../general/navigation/jade/nav.jade
+    .row
+      - for (var i=0; i<3; i++)
+        .col-md-4
+          h2=termine.termine[i].title
+          ul.event-list
+            - for( var t = 0; t < 3; t++ )
+              li
+                time
+                  span.day=termine.termine[i].gruppe[t].date
+                  span.month=termine.termine[i].gruppe[t].month
+                  span.time=termine.termine[i].gruppe[t].time
+                .info
+                  h2.title=termine.termine[i].gruppe[t].title
+                  p.desc=termine.termine[i].gruppe[t].desc
+          a(width="100px") all

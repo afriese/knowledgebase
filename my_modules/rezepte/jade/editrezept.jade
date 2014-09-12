@@ -1,0 +1,51 @@
+html
+  head
+    title List of all articles
+    
+    include ../../../assets/jade/assets.jade
+    
+    link(rel="stylesheet",type="text/css",href="/rezepte/css/rezept.css")
+    script(src="/rezepte/client_js/editrezept.js")
+  body(style="margin-top: 70px; margin-bottom: 50px")
+    .container
+      include ../../../general/navigation/jade/nav.jade
+      .page-header
+        h3=content.name 
+          small  (#{content.kategorie}) 
+      ul.nav.nav-tabs(role='tablist')
+        li#zutaten.active
+          a(href='#') Zutaten
+        li#zubereitung
+          a(href='#') Zubereitung
+      br 
+      .row
+        .col-md-8#col-zubereitung
+          dl.zubereitung
+            dd
+              table.full-width
+                tr#entry1
+                  td(rowspan="3") 
+                    textarea(rows="3").full-width 
+                  td(width="100px")
+                    .btn-group-vertical.full-width
+                      button(type="button").btn.btn-xs.btn-danger löschen
+                      button(type="button").btn.btn-xs.btn-default hoch
+                      button(type="button").btn.btn-xs.btn-default runter
+                      button(type="button").btn.btn-xs.btn-default add
+        .col-md-4#col-zutaten
+          table.table
+            tr
+              th Zutat
+              th Menge
+            each item in content.einkauf
+              tr
+                td=item.name
+                td #{item.menge} #{item.einheit} 
+          table.table
+            tr
+              th Zutat
+              th Menge
+            each item in content.vorrat
+              tr
+                td=item.name
+                td #{item.menge} #{item.einheit} 

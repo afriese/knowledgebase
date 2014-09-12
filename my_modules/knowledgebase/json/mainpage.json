@@ -1,0 +1,25 @@
+{
+	"module": "knowledgebase",
+	"brandname": "Knowledgebase",
+	"entries": [
+		{
+			"type": "link",
+			"title": "Home",
+			"link": "/kb"
+		}, {
+			"type": "menu",
+			"title": "Articles",
+			"subs": [
+				{
+					"type": "link",
+					"title": "list all articles",
+					"link": "/kb/"
+				}, {
+					"type": "link",
+					"title": "add a new article",
+					"link": "/kb/addarticle"
+				}
+			]
+		}
+	]
+}

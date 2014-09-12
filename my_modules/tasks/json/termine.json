@@ -1,0 +1,90 @@
+{
+	"termine": [
+		{
+			"title": "kurzfristig",
+			"gruppe": [
+				{
+					
+					"date": 3,
+					"month": "SEP",
+					"time": "10:00 AM",
+					"title": "Active Directory",
+					"desc": "HP Education B01 (Tag 1)",
+					"content":"<h1>Titel1</h1>"
+				}, {
+					"date": 4,
+					"month": "SEP",
+					"time": "9:00 AM",
+					"title": "Active Directory",
+					"desc": "HP Education B01 (Tag 2)",
+					"content":"<h1>Titel2</h1>"
+				} , {
+					"date": 5,
+					"month": "SEP",
+					"time": "9:00 AM",
+					"title": "Active Directory",
+					"desc": "HP Education B01 (Tag 3)",
+					"content":"<h1>Titel3</h1>"
+				}
+			]
+		}, {
+			"title": "mittelfristig",
+			"gruppe": [
+				{
+					"date": 4,
+					"month": "JUL",
+					"time": "ALL DAY",
+					"title": "Independence Day",
+					"desc": "United States Holiday"
+				}, {
+					"date": 8,
+					"month": "JUL",
+					"time": "9:00 AM",
+					"title": "Active Directory",
+					"desc": "HP Education B01 (Tag 2)"
+				} , {
+					"date": 20,
+					"month": "JAN",
+					"time": "9:00 AM",
+					"title": "Active Directory",
+					"desc": "HP Education B01 (Tag 3)"
+				}, {
+					"date": 31,
+					"month": "JAN",
+					"time": "9:00 AM",
+					"title": "Active Directory",
+					"desc": "HP Education B01 (Tag 3)"
+				}
+			]
+		}, {
+			"title": "langfristig",
+			"gruppe": [
+				{
+					"date": 4,
+					"month": "JUL",
+					"time": "ALL DAY",
+					"title": "Independence Day",
+					"desc": "United States Holiday"
+				}, {
+					"date": 8,
+					"month": "JUL",
+					"time": "9:00 AM",
+					"title": "Active Directory",
+					"desc": "HP Education B01 (Tag 2)"
+				} , {
+					"date": 20,
+					"month": "JAN",
+					"time": "9:00 AM",
+					"title": "Active Directory",
+					"desc": "HP Education B01 (Tag 3)"
+				}, {
+					"date": 31,
+					"month": "JAN",
+					"time": "9:00 AM",
+					"title": "Active Directory",
+					"desc": "HP Education B01 (Tag 3)"
+				}
+			]
+		}
+	]
+}

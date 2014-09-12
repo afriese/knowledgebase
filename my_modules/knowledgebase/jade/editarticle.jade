@@ -1,0 +1,87 @@
+html
+  head
+    title=title
+    
+    // includes all usual css and js files
+    include ../../../assets/jade/assets.jade
+    
+    // all for this file nessessary css and js
+    script(src="../knowledgebase/client_js/editarticle.js")
+    
+  body(style="margin-top: 70px; margin-bottom: 50px")
+    .container 
+      include ../../../general/navigation/jade/nav.jade
+      .row
+        .col-md-8
+          .page-header
+            h1 Editor 
+          #editor
+            .btn-toolbar(style="margin-bottom:15px")
+              .btn-group
+                #tex.btn.btn-default 
+                  span.fa.fa-align-left
+                #h.btn.btn-default
+                  span.glyphicon.glyphicon-header
+                #b.btn.btn-default
+                  span.fa.fa-bold
+                   
+              .btn-group
+                #warn.btn.btn-default
+                  span.fa.fa-exclamation-triangle 
+                    | warn
+                #err.btn.btn-default 
+                  span.fa
+                    | err
+                #suc.btn.btn-default
+                  span.fa
+                    | suc 
+                #info.btn.btn-default
+                  span.fa
+                    | info 
+              
+              .btn-group
+                #tex.btn.btn-default 
+                  span.fa.fa-user
+                #save.btn.btn-default
+                  span.fa.fa-download
+                #b.btn.btn-default
+                  span.fa.fa-rss
+                a(href="/kb/showarticle:#{title}")#v.btn.btn-default
+                  span.fa.fa-play 
+                    | show
+                a(href="#").btn.btn-default
+                  span.fa.fa-code 
+                    | code
+                  
+              .btn-group
+                #list.btn.btn-default
+                  span.fa.fa-bars
+                #entry.btn.btn-default
+                  span.fa.fa-circle-o
+            
+            h1 
+              input(type="text",style="width:100%",value=title)#title    
+            textarea(style="width:100%;height:80%;")#article=content
+          #viewer
+        .col-md-4
+          .well 
+            .input-group
+              input.form-control(type='text')
+              span.input-group-btn
+                button.btn.btn-default(type='button') Suche!
+          .well 
+            h4 &nbsp;&nbsp;Links
+            .list-group
+              li.list-group-item akkkasd
+              li.list-group-item akkkasd
+              li.list-group-item akkkasd
+              li.list-group-item akkkasd
+           .well
+             a(href="/keyword:test")
+               span.label.label-default #Test 
+              &nbsp;
+             span.label.label-default #Nochein Test
+         
+         
+    #infobox.alert.alert-info Erfolgrreich gespeichert
+    #infobox2.alert.alert-success test

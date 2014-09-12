@@ -1,0 +1,44 @@
+html
+  head
+    title List of all articles
+    
+    include ../../../assets/jade/assets.jade
+    
+    link(rel="stylesheet",type="text/css",href="/rezepte/css/rezept.css")
+    script(src="/rezepte/client_js/rezept.js")
+  body(style="margin-top: 70px; margin-bottom: 50px")
+    .container
+      include ../../../general/navigation/jade/nav.jade
+      .page-header
+        h3=content.name 
+          small  (#{content.kategorie}) 
+      ul.nav.nav-tabs(role='tablist')
+        li#beides.active
+          a(href='#') Beides
+        li#zubereitung
+          a(href='#') Zubereitung
+        li#zutaten
+          a(href='#') Zutaten
+      br 
+      .row
+        .col-md-8#col-zubereitung
+          dl.zubereitung
+            each zubereitung in content.zubereitung
+              dd=zubereitung
+        .col-md-4#col-zutaten
+          table.table
+            tr
+              th Zutat
+              th Menge
+            each item in content.einkauf
+              tr
+                td=item.name
+                td #{item.menge} #{item.einheit} 
+          table.table
+            tr
+              th Zutat
+              th Menge
+            each item in content.vorrat
+              tr
+                td=item.name
+                td #{item.menge} #{item.einheit} 

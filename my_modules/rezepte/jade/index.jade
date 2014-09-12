@@ -1,0 +1,22 @@
+html
+  head
+    title List of all articles
+    
+    include ../../../assets/jade/assets.jade
+
+  body(style="margin-top: 70px; margin-bottom: 50px")
+    
+    .container
+      include ../../../general/navigation/jade/nav.jade 
+      .row
+        .col-md-12
+          .page-header
+            h1 Alle Rezepte       
+          ul.list-unstyled.text-center
+            each rezept in content
+              li
+                h4=rezept.name 
+                  small  (#{rezept.kategorie})
+                p ~ #{rezept.kurzbeschreibung} ~
+                a(href="/rezepte/showrezept/#{rezept._id}") zeige
+                br
